@@ -19,4 +19,4 @@ while read row; do
   echo "$index $address"
 
   az network route-table route create --address-prefix $address --name $index --next-hop-type Internet --resource-group $resourcegroup --route-table-name $routetable
-done < 0.txt
+done < IPList_mini_sample.csv
