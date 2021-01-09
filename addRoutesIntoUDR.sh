@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # 実行環境に合わせて変更
-subscription="Azure 社内従量課金プラン No.1"
+subscriptionID="xx0000x0-xx00-0000-0x00-0x0x0xxxxx0x"
 resourcegroup="AppGW-rg"
-routetable="UDR2"
+routetable="UDR"
 
 # Azure login and set active subscription
 az login
-az account set --subscription $subscription
+az account set --subscription $subscriptionID
 
 # Add routes from IP list. 
 count=0
